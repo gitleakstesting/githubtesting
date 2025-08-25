@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-org-scan:
-    uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
+    uses: gitleakstesting/.githubtesting/.github/workflows/gitleaks.yml@main
