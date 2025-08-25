@@ -1,11 +1,10 @@
-name: Security - Gitleaks
+name: Reuse Gitleaks
 
 on:
   push:
   pull_request:
-  workflow_dispatch:
 
 jobs:
   gitleaks:
-    uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
-    secrets: inherit
+    uses: gitleakstesing/.github/.github/workflows/gitleaks.yml@main
+
