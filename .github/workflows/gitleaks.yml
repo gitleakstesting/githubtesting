@@ -1,0 +1,10 @@
+name: Security - Gitleaks
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  call-org-scan:
+    uses: githubtesting/.github/.github/workflows/gitleaks.yml@main
