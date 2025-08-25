@@ -9,4 +9,5 @@ jobs:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
     with:
       scan-path: "./"  
+      config-path: ".github/gitleaks.toml"
 
