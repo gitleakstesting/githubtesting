@@ -7,4 +7,6 @@ on:
 jobs:
   gitleaks:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
+    with:
+      scan-path: "./"     
 
