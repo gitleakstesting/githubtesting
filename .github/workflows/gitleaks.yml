@@ -1,14 +1,10 @@
-name: Gitleaks Scan Caller
-
+name: Reuse Gitleaks
 on:
   push:
   pull_request:
-
 jobs:
-  call-gitleaks:
+  gitleaks:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
-    with:
-      config_path: ".github/gitleaks.toml"
     permissions:
       contents: read
       security-events: write
