@@ -2,12 +2,9 @@ name: Reuse Gitleaks
 on:
   push:
   pull_request:
-
 jobs:
   gitleaks:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
-    with:
-      config_path: ".github/gitleaks.toml"   # 👈 tell it where your config really lives
     permissions:
       contents: read
       security-events: write
