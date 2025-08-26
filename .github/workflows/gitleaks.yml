@@ -8,9 +8,10 @@ jobs:
   call-gitleaks:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
     with:
-      config_path: ".github/.github.toml"
+      config_path: ".github/gitleaks.toml"
     permissions:
       contents: read
       security-events: write
+
     
 
