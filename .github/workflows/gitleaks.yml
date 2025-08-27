@@ -1,7 +1,11 @@
 name: Reuse Gitleaks
+
 on:
   push:
   pull_request:
+
 jobs:
   gitleaks:
-    uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
+    uses: gitleakstesting/.github/.github/workflows/reusable-gitleaks.yml@main
+    with:
+      config_path: ".gitleaks.toml"
