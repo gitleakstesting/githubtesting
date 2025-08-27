@@ -1,7 +1,12 @@
 name: gitleaks
 on: [pull_request, push]
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   gitleaks:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
     secrets: inherit
+
