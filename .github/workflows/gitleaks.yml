@@ -6,6 +6,6 @@ on:
 
 jobs:
   call-secret-scan:
-    uses: gitleakstesting/security-policies/.github/workflows/gitleaks.yml@main
+    uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
     with:
       config_path: ".github/gitleaks.toml"
