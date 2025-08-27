@@ -6,6 +6,7 @@ on:
 
 jobs:
   gitleaks:
-    uses: gitleakstesting/.github/.github/workflows/reusable-gitleaks.yml@main
+    uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
     with:
       config_path: ".gitleaks.toml"
+
