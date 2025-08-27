@@ -1,9 +1,11 @@
-name: Reuse Gitleaks
+name: Secret Scan
+
 on:
   push:
   pull_request:
+
 jobs:
-  gitleaks:
+  call-secret-scan:
     uses: gitleakstesting/.github/.github/workflows/gitleaks.yml@main
 
 
